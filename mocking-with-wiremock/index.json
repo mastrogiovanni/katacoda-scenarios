@@ -30,6 +30,16 @@
     }
   },
   "assets": {
+    "client": [
+      {
+        "directory": "wm",
+        "target": "~/"
+      },
+      {
+        "file": "deployment.yaml",
+        "target": "~/"
+      }
+    ],
     "host01": [
       {
         "directory": "wm",
