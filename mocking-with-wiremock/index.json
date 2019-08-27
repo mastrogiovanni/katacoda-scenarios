@@ -29,6 +29,20 @@
       "text": "finish.md"
     }
   },
+  "assets": {
+    "vm": [
+      {
+        "directory": "wm",
+        "target": "~/"
+      }
+    ],
+    "deployment": [
+      {
+        "file": "deploymnet.yaml",
+        "target": "~/"
+      }
+    ]
+  },
   "environment": {
     "uilayout": "editor-terminal"
   },
