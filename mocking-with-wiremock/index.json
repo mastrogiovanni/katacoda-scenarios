@@ -7,19 +7,11 @@
     "assets": {
       "client": [
         {
-          "file": "wm",
-          "target": "~/"
-        },
-        {
           "file": "deployment.yaml",
           "target": "~/"
         }
       ],
       "host01": [
-        {
-          "file": "wm",
-          "target": "~/"
-        },
         {
           "file": "deployment.yaml",
           "target": "~/"
