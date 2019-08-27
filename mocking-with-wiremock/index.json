@@ -4,6 +4,28 @@
   "difficulty": "Intermediate",
   "time": "30m",
   "details": {
+    "assets": {
+      "client": [
+        {
+          "directory": "wm",
+          "target": "~/"
+        },
+        {
+          "file": "deployment.yaml",
+          "target": "~/"
+        }
+      ],
+      "host01": [
+        {
+          "directory": "wm",
+          "target": "~/"
+        },
+        {
+          "file": "deployment.yaml",
+          "target": "~/"
+        }
+      ]
+    },
     "steps": [
       {
         "title": "Step 1",
@@ -28,28 +50,6 @@
     "finish": {
       "text": "finish.md"
     }
-  },
-  "assets": {
-    "client": [
-      {
-        "directory": "wm",
-        "target": "~/"
-      },
-      {
-        "file": "deployment.yaml",
-        "target": "~/"
-      }
-    ],
-    "host01": [
-      {
-        "directory": "wm",
-        "target": "~/"
-      },
-      {
-        "file": "deployment.yaml",
-        "target": "~/"
-      }
-    ]
   },
   "environment": {
     "uilayout": "editor-terminal"
