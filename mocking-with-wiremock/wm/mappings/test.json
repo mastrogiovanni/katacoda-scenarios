@@ -1,0 +1,11 @@
+{
+    "request" : {
+      "url" : "/pippo",
+      "method" : "GET"
+    },
+    "response" : {
+      "status" : 200,
+      "bodyFileName" : "hello.txt"
+    }
+  }
+  
