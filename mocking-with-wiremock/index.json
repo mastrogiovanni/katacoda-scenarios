@@ -7,7 +7,7 @@
     "assets": {
       "client": [
         {
-          "directory": "wm",
+          "file": "wm",
           "target": "~/"
         },
         {
@@ -17,7 +17,7 @@
       ],
       "host01": [
         {
-          "directory": "wm",
+          "file": "wm",
           "target": "~/"
         },
         {
