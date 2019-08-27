@@ -30,15 +30,13 @@
     }
   },
   "assets": {
-    "vm": [
+    "host01": [
       {
         "directory": "wm",
         "target": "~/"
-      }
-    ],
-    "deployment": [
+      },
       {
-        "file": "deploymnet.yaml",
+        "file": "deployment.yaml",
         "target": "~/"
       }
     ]
