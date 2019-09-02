@@ -23,7 +23,7 @@ spec:
         imagePullPolicy: Always
         volumeMounts:
           - name: mappings
-            mountPath: /home/wiremock/mappings
+            mountPath: /root/wm/mappings
           - name: files
-            mountPath: /home/wiremock/__files
+            mountPath: /roow/wm/__files
       restartPolicy: Always

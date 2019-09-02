@@ -29,6 +29,14 @@
         {
           "file": "deployment.yaml",
           "target": "~/"
+        },
+        {
+          "file": "wm/__files/hello.txt",
+          "target": "~/wm/__files"
+        },
+        {
+          "file": "wm/mappings/test.json",
+          "target": "~/wm/mappings"
         }
       ]
     }
