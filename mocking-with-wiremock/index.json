@@ -7,13 +7,7 @@
     "assets": {
       "client": [
         {
-          "file": "deployment.yaml",
-          "target": "~/"
-        }
-      ],
-      "host01": [
-        {
-          "file": "deployment.yaml",
+          "file": "assets/deployment.yaml",
           "target": "~/"
         }
       ]
