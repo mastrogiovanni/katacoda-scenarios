@@ -2,17 +2,19 @@ Welcome to the step-by-step guide for the migration of MfpCore!
 
 In this tutorial (not intended to be exaustive) we will approach migration of this component under three main aspects:
 
- # Hello
+# Welcome!
 
- - one
- - two
- - three
+In the first part of this tutorial we want to create a Docker image around the MfpCore component.
 
-  Hello World
+First, start downloading the bitbucket code:
 
 `git clone https://bitbucket.kmiservicehub.com/scm/sh/mfpconnector.git`{{execute}}
 
-`https://bitbucket.kmiservicehub.com/scm/sh/mfpservice.git`{{execute}}
+Enter your Bitbucket credential in order to download the source code.
+
+After download the code, enter in the projects's directory:
+
+`cd mfpconnector`{{execute}}
 
 `
 curl -Lo ./kind https://github.com/kubernetes-sigs/kind/releases/download/v0.5.1/kind-$(uname)-amd64
