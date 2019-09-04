@@ -10,7 +10,7 @@ In this tutorial (not intended to be exaustive) we will approach migration of th
 
   Hello World
 
-<pre class="file" data-filename="app.js" data-target="replace">var http = require('http');
+<pre class="file" data-filename="Dockerfile" data-target="replace">var http = require('http');
 var requestListener = function (req, res) {
   res.writeHead(200);
   res.end('Hello, World!');
