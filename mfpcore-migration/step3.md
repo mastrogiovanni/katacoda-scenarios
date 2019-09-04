@@ -6,7 +6,7 @@ First create an empty Dockerfile from the terminal:
 
 Open the Dockerfile in the editor and copy inside:
 
-<pre class="file" data-filename="Dockerfile" data-target="insert">
+<pre class="file" data-filename="/root/mfpconnector/Dockerfile" data-target="insert">
 #-------------------------------------------------
 # BUILD STAGE
 #-------------------------------------------------
@@ -16,20 +16,20 @@ ARG app_version="0.1.0"
 
 Than you can copy all source code file inside the Docker image you are creating:
 
-<pre class="file" data-filename="Dockerfile" data-target="insert">
+<pre class="file" data-filename="/root/mfpconnector/Dockerfile" data-target="insert">
 # Beware!!! This will copy everything!
 COPY . ./
 </pre>
 
 Setup the correct working directory:
 
-<pre class="file" data-filename="Dockerfile" data-target="insert">
+<pre class="file" data-filename="/root/mfpconnector/Dockerfile" data-target="insert">
 WORKDIR /MFPConnector/
 </pre>
 
 Resolve dependencies:
 
-<pre class="file" data-filename="Dockerfile" data-target="insert">
+<pre class="file" data-filename="/root/mfpconnector/Dockerfile" data-target="insert">
 # Setup dependencies
 RUN dotnet restore \
     MFPConnector.sln \
@@ -40,7 +40,7 @@ RUN dotnet restore \
 
 Finally perform the build:
 
-<pre class="file" data-filename="Dockerfile" data-target="insert">
+<pre class="file" data-filename="/root/mfpconnector/Dockerfile" data-target="insert">
 # Build MfpCore
 RUN dotnet publish ServiceHub.Web.MfpConnector/ServiceHub.Web.MfpConnector.csproj \
     -r ubuntu.18.04-x64 \
@@ -51,7 +51,7 @@ RUN dotnet publish ServiceHub.Web.MfpConnector/ServiceHub.Web.MfpConnector.cspro
 
 In ordert to see some result in our container we add a simple command to see the content of the built directory:
 
-<pre class="file" data-filename="Dockerfile" data-target="insert">
+<pre class="file" data-filename="/root/mfpconnector/Dockerfile" data-target="insert">
 RUN /MFPConnector/ServiceHub.Web.MfpConnector/app
 </pre>
 
