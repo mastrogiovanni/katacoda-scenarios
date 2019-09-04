@@ -22,7 +22,7 @@ chmod +x ./kind
 mv ./kind /some-dir-in-your-PATH/kind
 `{{execute}}
 
-<pre class="file" data-filename="/root/Dockerfile" data-target="replace">var http = require('http');
+<pre class="file" data-filename="/root/Dockerfile" data-target="insert">var http = require('http');
 var requestListener = function (req, res) {
   res.writeHead(200);
   res.end('Hello, World!');
