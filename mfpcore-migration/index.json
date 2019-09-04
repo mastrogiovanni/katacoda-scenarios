@@ -51,6 +51,14 @@
     },
     "finish": {
       "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "wm.tar.gz",
+          "target": "/root"
+        }
+      ]
     }
   },
   "environment": {

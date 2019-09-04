@@ -1,6 +1,10 @@
-# Create Dockerfile (1): the Build phase
+# Create Dockerfile (1/2): the Build phase
 
-First create an empty Dockerfile and insert the following:
+First create an empty Dockerfile:
+
+`touch /root/mfpconnector/Dockerfile`{{execute}}
+
+than open it in the editor (/root/mfpconnector) and insert the following:
 
 <pre class="file" data-filename="/root/mfpconnector/Dockerfile" data-target="replace">
 #-------------------------------------------------
@@ -26,7 +30,7 @@ WORKDIR /MFPConnector/
 Resolve dependencies:
 
 <pre class="file" data-filename="/root/mfpconnector/Dockerfile" data-target="append">
-# Setup dependencies
+# Resolve dependencies
 RUN dotnet restore \
     MFPConnector.sln \
     -r ubuntu.18.04-x64 \
@@ -50,4 +54,14 @@ In ordert to see some result in our container we add a simple command to see the
 <pre class="file" data-filename="/root/mfpconnector/Dockerfile" data-target="append">
 RUN /MFPConnector/ServiceHub.Web.MfpConnector/app
 </pre>
+
+Your Dockerfile is completed: the image you are creating will build MfpCore in a containerized environment!
+
+In order to perform the build you need to invoke:
+
+`docker build -t mfpcore .`{{execute}}
+
+And finally you can run the container:
+
+`docker run mfpcore`{{execute}}
 
