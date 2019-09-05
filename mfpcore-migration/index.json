@@ -57,6 +57,10 @@
         {
           "file": "wm.tar.gz",
           "target": "/root"
+        },
+        {
+          "file": "mfpconnector.tar.gz",
+          "target": "/root"
         }
       ]
     }
