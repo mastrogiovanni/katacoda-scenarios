@@ -56,11 +56,11 @@
       "host01": [
         {
           "file": "wm.tar.gz",
-          "target": "/root"
+          "target": "/root/wm.tar.gz"
         },
         {
           "file": "mfpconnector.tar.gz",
-          "target": "/root"
+          "target": "/root/mfpconnector.tar.gz"
         }
       ]
     }
